@@ -1,1 +1,10 @@
 learn golang、consul、testcase
+
+
+
+1:run docker
+
+docker run -d -p 8500:8500 consul consul agent -data-dir=/consul/data -config-dir=/consul/config -dev -client=0.0.0.0 -bind=0.0.0.0
+
+2: check web ui
+curl 127.0.0.1:8500/ui
